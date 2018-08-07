@@ -10,27 +10,29 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 
 namespace NAppUpdate_sample
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for UpdateWindow.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class UpdateWindow : Window
     {
-        private MainWindowViewModel VM;
+        private UpdateWindowViewModel VM;
 
-        public MainWindow()
+        public UpdateWindow()
         {
             InitializeComponent();
 
-            VM = new MainWindowViewModel();
+            VM = new UpdateWindowViewModel();
+            VM.Close += () =>
+            {
+                Visibility = Visibility.Collapsed;
+                Close();
+            };
 
             DataContext = VM;
-
-            Closing += (sender, args) => VM.CloseAction?.Invoke();
         }
     }
 }

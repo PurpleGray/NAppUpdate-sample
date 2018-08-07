@@ -1,0 +1,3 @@
+[submodule "NAppUpdate"]
+	path = NAppUpdate
+	url = https://github.com/Stratocast3r/NAppUpdate

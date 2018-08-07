@@ -5,8 +5,14 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NAppUpdate_sample"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="NAppUpdate sample" Height="150" Width="200" FontSize="14" FontFamily="Courier New" FontWeight="Medium">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="70" />
+        </Grid.RowDefinitions>
         
+        <TextBlock Grid.Row="0" Text="{Binding AppVersion}" />
+        <Button Grid.Row="1" Content="Check for updates" Command="{Binding CheckUpdates}" />
     </Grid>
 </Window>

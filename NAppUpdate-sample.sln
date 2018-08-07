@@ -5,19 +5,60 @@ VisualStudioVersion = 15.0.27703.2035
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAppUpdate-sample", "NAppUpdate-sample\NAppUpdate-sample.csproj", "{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "NAppUpdate", "NAppUpdate", "{D3E5B66D-CB79-452F-B828-C4C864A6C985}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NAppUpdate.Framework", "NAppUpdate\src\NAppUpdate.Framework\NAppUpdate.Framework.csproj", "{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
+		Debug|x86 = Debug|x86
+		Release 3.5|Any CPU = Release 3.5|Any CPU
+		Release 3.5|x86 = Release 3.5|x86
+		Release 4.0|Any CPU = Release 4.0|Any CPU
+		Release 4.0|x86 = Release 4.0|x86
 		Release|Any CPU = Release|Any CPU
+		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Debug|x86.Build.0 = Debug|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release 3.5|Any CPU.ActiveCfg = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release 3.5|Any CPU.Build.0 = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release 3.5|x86.ActiveCfg = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release 3.5|x86.Build.0 = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release 4.0|Any CPU.ActiveCfg = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release 4.0|Any CPU.Build.0 = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release 4.0|x86.ActiveCfg = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release 4.0|x86.Build.0 = Release|Any CPU
 		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release|x86.ActiveCfg = Release|Any CPU
+		{5854BAC2-A59C-48D5-AB1F-006BCF7E63EE}.Release|x86.Build.0 = Release|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Debug|x86.Build.0 = Debug|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release 3.5|Any CPU.ActiveCfg = Release 3.5|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release 3.5|Any CPU.Build.0 = Release 3.5|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release 3.5|x86.ActiveCfg = Release 3.5|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release 3.5|x86.Build.0 = Release 3.5|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release 4.0|Any CPU.ActiveCfg = Release 4.0|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release 4.0|Any CPU.Build.0 = Release 4.0|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release 4.0|x86.ActiveCfg = Release 4.0|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release 4.0|x86.Build.0 = Release 4.0|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release|Any CPU.ActiveCfg = Release 4.0|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release|Any CPU.Build.0 = Release 4.0|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release|x86.ActiveCfg = Release 4.0|Any CPU
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE}.Release|x86.Build.0 = Release 4.0|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5C07EBDF-D43F-4BE9-B560-D7A443C0EDCE} = {D3E5B66D-CB79-452F-B828-C4C864A6C985}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {20294492-6910-47DA-B61B-3036CB639BD1}
