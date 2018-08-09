@@ -54,7 +54,7 @@ namespace NAppUpdate_sample
                                 // get out of the way so the console window isn't obstructed
                                 try
                                 {
-                                    updateManager.ApplyUpdates(true);
+                                    updateManager.ApplyUpdatesEx("NAppUpdate-sample.exe");
 
                                     if (Application.Current.Dispatcher.CheckAccess())
                                     {
@@ -81,21 +81,6 @@ namespace NAppUpdate_sample
             }
         }
 
-        private ICommand installWhenExit;
-
-        public ICommand InstallWhenExit
-        {
-            get
-            {
-                if (installWhenExit == null)
-                {
-                    installWhenExit = new RelayCommand(p => true, p => Close?.Invoke());
-                }
-
-                return installWhenExit;
-            }
-        }
-
         static void DoEvents()
         {
             var frame = new DispatcherFrame(true);
@@ -117,7 +102,7 @@ namespace NAppUpdate_sample
             updateManager = UpdateManager.Instance;
             Helper = new UpdateTaskHelper();
 
-            var iconStream = System.Reflection.Assembly.GetExecutingAssembly().GetManifestResourceStream("NAppUpdate.Framework.updateicon.ico");
+            var iconStream = System.Reflection.Assembly.GetAssembly(typeof(UpdateManager)).GetManifestResourceStream("NAppUpdate.Framework.updateicon.ico");
             if (iconStream != null)
                 this.Icon = new IconBitmapDecoder(iconStream, BitmapCreateOptions.None, BitmapCacheOption.Default).Frames[0];
         }

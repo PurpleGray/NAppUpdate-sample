@@ -53,7 +53,6 @@
     <ApplicationDefinition Include="App.xaml">
       <Generator>MSBuild:Compile</Generator>
     </ApplicationDefinition>
-    <Compile Include="Utils\BooleanToVisibilityConverter.cs" />
     <Compile Include="Utils\RelayCommand.cs" />
     <Compile Include="Utils\UpdateTaskHelper.cs" />
     <Compile Include="Utils\UpdateTaskInfo.cs" />
