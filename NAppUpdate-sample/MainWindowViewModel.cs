@@ -91,7 +91,7 @@ namespace NAppUpdate_sample
 
         private NAppUpdate.Framework.Sources.IUpdateSource PrepareUpdateSource()
         {
-            var source = new FtpSource("193.232.26.47", @"/DATA/Projects/___ПО/test_app/upd.xml", "sergei", "O2P8pL1Y");
+            var source = new FtpSource("ftp://193.232.26.47", @"/DATA/Projects/___ПО/test_app/upd.xml", "sergei", "O2P8pL1Y");
             return source;
         }
 
