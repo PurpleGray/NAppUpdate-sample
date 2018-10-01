@@ -54,7 +54,7 @@ namespace NAppUpdate_sample
                                 // get out of the way so the console window isn't obstructed
                                 try
                                 {
-                                    //updateManager.ApplyUpdatesEx("NAppUpdate-sample.exe");
+                                    updateManager.ApplyUpdatesEx("NAppUpdate-sample.exe");
 
                                     if (Application.Current.Dispatcher.CheckAccess())
                                     {
@@ -65,13 +65,9 @@ namespace NAppUpdate_sample
                                         Application.Current.Dispatcher.Invoke(new Action(Close));
                                     }
                                 }
-                                catch
+                                catch (Exception ex)
                                 {
-                                    MessageBox.Show("An error occurred while trying to install software updates");
-                                }
-                                finally
-                                {
-                                    updateManager.CleanUp();
+                                    MessageBox.Show($"An error occurred while trying to install software updates: {ex.Message}");
                                 }
                             }), null);
                     });

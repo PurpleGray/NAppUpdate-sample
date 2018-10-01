@@ -100,23 +100,6 @@ namespace NAppUpdate_sample
             var updManager = UpdateManager.Instance;
             updManager.UpdateSource = PrepareUpdateSource();
             updManager.ReinstateIfRestarted();
-
-            CloseAction = () =>
-            {
-                if (applyUpdates)
-                {
-                    try
-                    {
-                        UpdateManager.Instance.PrepareUpdates();
-                    }
-                    catch
-                    {
-                        UpdateManager.Instance.CleanUp();
-                        return;
-                    }
-                    UpdateManager.Instance.ApplyUpdates(false);
-                }
-            };
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
